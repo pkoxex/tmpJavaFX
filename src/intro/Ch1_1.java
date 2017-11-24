@@ -1,4 +1,3 @@
-
 package intro;
 
 import javafx.application.Application;
@@ -22,19 +21,24 @@ public class Ch1_1 extends Application {
     TextField mytextField;
 
     @FXML
+    TextField sectext;
+
+    @FXML
     protected void handleButton(ActionEvent event) {
-        label1.setText("NewLabelTitle");
-        if (myTextField == null) {
-            System.out.println("null");
-            //myTextField.setText("wetrwertwertwert");
-        }
+
+        if (mytextField.getText().isEmpty()) 
+            System.out.println("myTextField has is EMPTY");
         else {
             System.out.println("ok");
+            String input1 = mytextField.getText();
+            //int intInput1 = Integer.parseInt(input1);
+            System.out.println(input1);
         }
-        //System.out.println(myTextField.getText());
-        //String input = myTextField.getText();
+        //System.out.println(mytextField.getText());
+        //System.out.println(sectext.getText());
+        //String input = mytextField.getText();
         //int intInput = Integer.parseInt(input);
-        //System.out.println(intInput * 5);
+        //System.out.println(intInput * 2);
     }
 
     @Override
