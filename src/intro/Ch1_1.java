@@ -23,12 +23,13 @@ public class Ch1_1 extends Application {
     @FXML
     protected void handleButton(ActionEvent event) {
 
-        if (mytextField.getText().isEmpty()) 
+        if (mytextField.getText().isEmpty()) {
             System.out.println("myTextField has is EMPTY");
-        else {
+        } else {
             System.out.println("ok");
-            String input = mytextField.getText();
-            System.out.println(input);
+            String inputStr = mytextField.getText();
+            CharSequence charseq = mytextField.getCharacters();
+            System.out.println("inputStr==> " + inputStr + "charseq--> " + charseq);
         }
         //System.out.println(mytextField.getText());
         //String input = mytextField.getText();
